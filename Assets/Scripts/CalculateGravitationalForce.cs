@@ -17,7 +17,7 @@ public class CalculateGravitationalForce
         float forceMagnitude = (GravitionalConstant * mass1 * mass2) / (distance * distance);
         Vector3 gravitionalForce = direction.normalized * forceMagnitude;
 
-        //mass2 objesinin son hızı vektörünü hesaplayıp geri döndür
+        //mass2 objesinin son hız vektörünü hesaplayıp geri döndür
         Vector3 gravitionalAcceleration = gravitionalForce / mass2;
         Vector3 gravitionalVelocity = gravitionalAcceleration * deltaTime;
         Vector3 postVelocity = gravitionalVelocity + velocity0;
